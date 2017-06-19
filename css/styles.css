@@ -42,8 +42,8 @@ html, body, .main {
   flex-direction: column;
 }
 
-.input-box-container .input {
-  width: 300px;
+.input-control {
+  margin-bottom: 10px;
 }
 
 .output-box {
@@ -51,4 +51,20 @@ html, body, .main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+input {
+  width: 300px;
+  background-color: #fff;
+  border-radius: 21px;
+  border: 1px solid #e6ecf0;
+  box-sizing: border-box;
+  color: #14171a;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 10px;
+}
+
+input:focus {
+  outline: none;
 }
