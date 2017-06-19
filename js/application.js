@@ -12,7 +12,7 @@ function reactiveCalc() {
   var pesoInput = $('#peso').val();
   var alturaInput = $('#altura').val();
   if (pesoInput && alturaInput) {
-    var peso = parseInt(pesoInput);
+    var peso = parseFloat(pesoInput);
     var altura = parseFloat(alturaInput);
     var imc = calculeImc(peso, altura);
     $('#imc').text(imc.toFixed(2));
