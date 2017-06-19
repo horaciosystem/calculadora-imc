@@ -5,6 +5,22 @@ html, body, .main {
   display: flex;
 }
 
+input {
+  width: 300px;
+  background-color: #fff;
+  border-radius: 21px;
+  border: 1px solid #e6ecf0;
+  box-sizing: border-box;
+  color: #14171a;
+  font-size: 1.5em;
+  line-height: 18px;
+  padding: 10px;
+}
+
+input:focus {
+  outline: none;
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -53,18 +69,23 @@ html, body, .main {
   align-items: center;
 }
 
-input {
-  width: 300px;
-  background-color: #fff;
-  border-radius: 21px;
-  border: 1px solid #e6ecf0;
-  box-sizing: border-box;
-  color: #14171a;
-  font-size: 14px;
-  line-height: 18px;
-  padding: 10px;
+.imc-field {
+  font-family: "serifa_bqroman", sans-serif;
+  font-weight: bold;
+  font-size: 5em;
+  line-height: 1.2;
+  transition: color 2s ease;
+  margin: 0;
 }
 
-input:focus {
-  outline: none;
+.imc-field.is-good {
+  color: #009688;
+}
+
+.imc-field.is-worrying {
+  color: #FF9800;
+}
+
+.imc-field.is-bad {
+  color: #ff4245;
 }
