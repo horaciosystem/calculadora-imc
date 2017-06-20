@@ -18,11 +18,28 @@
           <div class="input-box-container">
           <label class="label">Peso</label>
           <span class="input-control">
-            <input id="peso" type="number" min=0 class="input" placeholder="Kilos" autofocus>
+            <input 
+              id="peso"
+              type="number"
+              min=0
+              step="0.001"
+              oninput="validity.valid || (value='');"
+              class="input"
+              placeholder="Kilos"
+              autofocus
+            >
           </span>
           <label class="label">Altura</label>
           <span class="input-control">
-            <input id="altura" type="number" min=0 class="input" placeholder="Metros">
+            <input
+              id="altura"
+              type="number"
+              min=0
+              step="0.001"
+              oninput="validity.valid || (value='');"
+              class="input"
+              placeholder="Metros"
+            >
           </span>
           </div>
         </div>

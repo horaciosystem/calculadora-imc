@@ -78,8 +78,14 @@ html, body, .main {
 }
 
 .imc-field.is-bad {
-  color: #F44336
-;
+  color: #F44336;
+}
+
+.stat-field {
+  font-family: 'Roboto', sans-serif;
+	font-size: 2em;
+	font-weight: 500;
+  margin: 0;
 }
 
 .input {
